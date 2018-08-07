@@ -1,0 +1,8 @@
+
+
+<% if @screenshot %>
+	<%= image_tag("#{@src_url}",width: '600') %> <br>
+	<%= link_to "Do you want to take screenshot of other page", new_screenshot_path %>
+<% else %>
+	<p>Not able to render</p>
+<% end %>

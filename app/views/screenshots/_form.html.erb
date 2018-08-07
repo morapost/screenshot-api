@@ -1,0 +1,9 @@
+<%= form_tag("/screenshots") do %>
+  <%= label_tag "Enter URL" %><br>
+  <%= text_field_tag :url %>
+  <br>
+  
+  <p>
+    <%= submit_tag("Submit") %>
+  </p>
+<% end %>
